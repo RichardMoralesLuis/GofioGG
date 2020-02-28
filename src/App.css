@@ -1,6 +1,6 @@
 .App {
   /*text-align: center;*/
-  width: 80px;
+  width: 100%;
 }
 
 .App-logo {
@@ -36,4 +36,17 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Nuestros estilos */
+.Main{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.Content{
+  display: flex;
+  justify-content: center;
+  width: 80%;
+
 }

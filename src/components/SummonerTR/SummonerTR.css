@@ -1,0 +1,16 @@
+.SummonerRow {
+    width: 100%;
+}
+
+.SummonerItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    width: 100%;
+}
+
+.SummonerItem > div{
+    flex: 1;
+    text-align: left;
+
+}

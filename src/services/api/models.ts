@@ -1,17 +1,8 @@
 
 export type TeamGofioPlayers = 'sinsajo02' | 'EleTanPancho';
 
+
 export interface Summoner {
-  profileIconId: number;
-  name: TeamGofioPlayers;
-  puuid: string;
-  summonerLevel: number;
-  id: string;
-  accountId: string;
-}
-
-
-export interface SummonerData {
   queueType: string;
   summonerName: string;
   hotStreak: boolean;
@@ -21,6 +12,7 @@ export interface SummonerData {
   tier: string;
   leagueId: string;
   leaguePoints: number;
+  winRate: number;
 }
 
 

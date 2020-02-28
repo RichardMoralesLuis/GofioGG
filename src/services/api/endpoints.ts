@@ -3,15 +3,15 @@ import { Summoner } from './models';
 import { parserSummoner } from './parsers';
 
 
-const PLAYERS_NAME = ['sinsajo02', 'EleTanPancho'];
+const PLAYERS_NAME = ['v9El-p8UZFYiNEqD5Oc9RR9G_zsqenJJkjx2XS8YkJVIMzs', 'U7oadWNPLSRSnDJb3xxEb_o16PAH5F_kfoty6Qwn8RlmdqI'];
 const baseURL = 'https://euw1.api.riotgames.com/lol';
 
-const getAllPlayers = (): Summoner[] => {
-  const url = 'summoner/v4/summoners/by-name';
+const getAllPlayers = (): Promise<Summoner[]> => {
   const requests = PLAYERS_NAME.map(player => {
+  const url = 'league/v4/entries/by-summoner';
     return axios.get(`${baseURL}/${url}/${player}`, {
       headers: {
-        'X-Riot-Token': process.env.REACT_APP_API_KEY
+        'X-Riot-Token': 'RGAPI-9677b094-ebc0-42e0-a37f-1e4de77cdfec'
       }
     })
       .then(summoner => parserSummoner(summoner))

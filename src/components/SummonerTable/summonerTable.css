@@ -1,0 +1,19 @@
+.summonerTable{
+    width: 100%;
+}
+
+.summonerTableHeader{
+    display: flex;
+    padding: 10px 0px;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.summonerTableHeader > h3{
+    flex: 1;
+    text-align: left;
+    padding: 10px 0px;
+
+}
+
